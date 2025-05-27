@@ -10,12 +10,19 @@ import { Router } from '@angular/router';
   styleUrl: './carro-login.component.css'
 })
 export class CarroLoginComponent {
+<<<<<<< HEAD
   // ===== VARIÁVEIS =====
   telaRecuperacao = false; // Inicializada corretamente
+=======
+  recuperar() {
+    throw new Error('Method not implemented.');
+  }
+>>>>>>> 397c2a66f2c74059356ea835fca87f31ed4929a2
   titulo = 'Faça seu Login!';
   login = '';
   senha = '';
   email = '';
+<<<<<<< HEAD
   botaoDesabilitado = false; // ← MUDANÇA PRINCIPAL: false para habilitar o botão
 
   constructor(private router: Router) { }
@@ -107,3 +114,30 @@ export class CarroLoginComponent {
            !this.botaoDesabilitado;
   }
 }
+=======
+  botaoDesabilitado: boolean = true;
+
+  constructor(private router: Router) { }
+
+  onBotaoClicado() {
+    if (this.login.trim() !== '' && this.senha.trim() !== '') {
+      if (this.login === 'loginadmin' && this.senha === 'admin') {
+        alert(`Bem-vindo ${this.login} !`);
+        this.router.navigate(['/carros']);
+      } else if (this.login === 'logincliente' && this.senha === 'cliente') {
+        alert(`Bem Vindo${this.login}!`);
+        this.router.navigate(['']);
+      }
+
+      else {
+        alert(`Dados Inválidos`);
+      }
+    } else {
+      alert(`Preencha ambos os campos!`);
+    }
+  }
+  voltarLogin() {
+    this.router.navigate(['/login']);
+  }
+}
+>>>>>>> 397c2a66f2c74059356ea835fca87f31ed4929a2

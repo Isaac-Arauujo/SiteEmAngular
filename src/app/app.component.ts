@@ -3,12 +3,19 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from "./pages/home/home.component";
+<<<<<<< HEAD
 import { FooterComponent } from "./components/footer/footer.component";
+=======
+>>>>>>> 397c2a66f2c74059356ea835fca87f31ed4929a2
 
 @Component({
   selector: 'app-root',
   standalone: true,
+<<<<<<< HEAD
   imports: [RouterOutlet, HeaderComponent, FormsModule, FooterComponent],
+=======
+  imports: [RouterOutlet, HeaderComponent, FormsModule, HomeComponent],
+>>>>>>> 397c2a66f2c74059356ea835fca87f31ed4929a2
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

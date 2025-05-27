@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav class="navbar">
     <!-- Logo à esquerda -->
     <div class="logo" routerLink="/">
@@ -23,3 +24,31 @@
 </nav>
 
 
+=======
+<form>
+    <nav>
+        <ul>
+            <mat-toolbar color="black">
+                <!-- Home -->
+                <button mat-button class="logo-button" routerLink="/">
+                    <mat-icon>time_to_leave</mat-icon>
+                    <span>Infinity Auto</span>
+                </button>
+                <!-- Espaçador -->
+                <span class="spacer"></span>
+                <!-- Botões -->
+                <button mat-raised-button routerLink="carros/login">
+                    <mat-icon>account_circle</mat-icon>
+                    Login
+                </button>
+                <!-- Menu que abre opções -->
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                </mat-menu>
+            </mat-toolbar>
+        </ul>
+    </nav>
+</form>
+>>>>>>> 397c2a66f2c74059356ea835fca87f31ed4929a2
