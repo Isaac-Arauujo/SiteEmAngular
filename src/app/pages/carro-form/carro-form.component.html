@@ -1,0 +1,40 @@
+<div class="content-container">
+  <h1>{{ titulo }}</h1>
+  <form>
+    <label for="input-id">ID</label><br>
+    <input class="input-id" id="input-id" name="input-id" placeholder="Digite o ID"
+      type="text" [(ngModel)]="carro.id" />
+
+    <label for="input-nome">Nome</label><br>
+    <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o nome"
+      type="text" [(ngModel)]="carro.nome" />
+
+    <label for="input-marca">Marca</label><br>
+    <input class="input-simples" id="input-marca" name="input-marca" placeholder="Digite a marca"
+      type="text" [(ngModel)]="carro.marca" />
+
+    <label for="input-modelo">Modelo</label><br>
+    <input class="input-simples" id="input-modelo" name="input-modelo" placeholder="Digite o modelo"
+      type="text" [(ngModel)]="carro.modelo" />
+
+    <label for="input-ano">Ano</label><br>
+    <input class="input-simples" id="input-ano" name="input-ano" placeholder="Digite o ano"
+      type="text" [(ngModel)]="carro.ano" />
+
+    <label for="input-valor">Valor</label><br>
+    <input class="input-simples" id="input-valor" name="input-valor" placeholder="Digite o valor"
+      type="number" [(ngModel)]="carro.valor" />
+
+    <label for="input-descricao">Descrição</label><br>
+    <textarea class="input-simples" id="input-descricao" name="input-descricao" placeholder="Descrição do carro"
+      [(ngModel)]="carro.descricao"></textarea>
+
+    <label for="input-img">URL da Imagem</label><br>
+    <input class="input-simples" id="input-img" name="input-img" placeholder="URL da imagem"
+      type="text" [(ngModel)]="carro.img" />
+
+    <button class="input-submeter" (click)="submeter()">
+      Cadastrar
+    </button>
+  </form>
+</div>

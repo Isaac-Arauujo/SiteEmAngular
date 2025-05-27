@@ -1,0 +1,96 @@
+/* Título */
+h1 {
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #e50914, #f5f5f5, #e50914);
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+/* Formulário container */
+form {
+    width: 95%;
+    max-width: 500px;
+    background-color: #111317;
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+}
+
+/* Inputs */
+.input-simples {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-simples:focus {
+    border-color: #e50914;
+    background-color: rgba(255, 255, 255, 0.08);
+    outline: none;
+}
+
+/* Botão de enviar */
+.input-submeter {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(135deg, #e50914, #ff1e56);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.input-submeter:hover {
+    background: linear-gradient(135deg, #ff1e56, #e50914);
+    transform: translateY(-2px);
+}
+
+.input-submeter:active {
+    transform: translateY(0);
+}
+
+/* Mensagem */
+.mensagem {
+    margin: 20px auto;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 18px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #eaeaea;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+router-outlet {
+    flex: 1;
+}

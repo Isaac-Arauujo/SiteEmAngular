@@ -1,0 +1,13 @@
+    <h1>{{ titulo }}</h1>
+
+<div class="content-container">
+    @if(modal){
+    <app-modal [carro]="comprarCarro" (close)="fecharModal()"></app-modal>
+    }
+
+    <div class="card-wrapper">
+        @for(carro of carros; track $index){
+        <app-card-item [carro]="carro" (abrirModal)="comprar($event)" />
+        }
+    </div>
+</div>

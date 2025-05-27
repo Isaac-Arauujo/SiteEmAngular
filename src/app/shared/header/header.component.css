@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Faz o main crescer empurrando o footer */
+main {
+    flex: 1;
+}
+
+/* Navbar principal */
+.navbar {
+    background-color: #000000; /* Preto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 0 0 24px 24px;
+    position: relative;
+    gap: 20px;
+}
+
+/* Logo à esquerda fixo */
+.logo {
+    position: absolute;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Fonte branca */
+    cursor: pointer;
+}
+
+.logo .material-icons {
+    font-size: 28px;
+    color: white;
+}
+
+/* Botões centralizados */
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-center .nav-btn {
+    background-color: #f5f5f5;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px; /* Mais quadrado */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.nav-center .nav-btn:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transform: translateY(-2px);
+}
+
+/* Ícones dos botões */
+.nav-btn .material-icons {
+    font-size: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 24px 24px 0 0;
+    font-size: 14px;
+}

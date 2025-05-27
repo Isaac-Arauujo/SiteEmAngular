@@ -1,0 +1,71 @@
+<div class="pagina">
+
+  <!-- Tela de Recuperar Senha -->
+  @if (telaRecuperacao) {
+  <div class="webmotors-container">
+    <div class="webmotors-header">
+      <h1>Infinity Auto</h1>
+      <p class="subtitle">Recuperar Senha</p>
+    </div>
+
+    <div class="webmotors-form">
+      <form>
+        <div class="form-group">
+          <label for="email">Digite seu Email</label>
+          <input class="webmotors-input" id="email" name="email" type="email" [(ngModel)]="email"
+            placeholder="Seu email cadastrado" />
+        </div>
+
+        <button class="webmotors-btn" [disabled]="botaoDesabilitado" (click)="onBotaoClicado()">
+          Enviar Link de Recuperação
+        </button>
+
+        <div class="webmotors-footer-form">
+          <a class="link-voltar" (click)="voltarLogin()">← Voltar para o Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  }
+
+  <!-- Tela de Login Principal -->
+  @if (!telaRecuperacao) {
+  <div class="webmotors-container">
+    <div class="webmotors-header">
+      <h1>Infinity Auto</h1>
+      <p class="subtitle">{{ titulo }}</p>
+    </div>
+
+    <div class="webmotors-form">
+      <form>
+        <div class="form-group">
+          <label for="email">Login</label>
+          <input class="webmotors-input" id="email" name="email" type="email" [(ngModel)]="login"
+            placeholder="Digite seu email" />
+        </div>
+
+        <div class="form-group">
+          <label for="input-senha">Senha</label>
+          <input class="webmotors-input" id="input-senha" name="input-senha" type="password" [(ngModel)]="senha"
+            placeholder="Digite sua senha" />
+        </div>
+
+        <div class="remember-me">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember">Lembrar-me</label>
+        </div>
+
+        <button class="webmotors-btn" [disabled]="botaoDesabilitado" (click)="onBotaoClicado()">
+          Entrar
+        </button>
+
+        <div class="webmotors-footer-form">
+          <a class="link-secundario" (click)="esqueceuSenha()">Esqueceu sua senha?</a>
+          <span class="divider">|</span>
+        </div>
+      </form>
+    </div>
+  </div>
+  }
+
+</div>

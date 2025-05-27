@@ -1,0 +1,255 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 16px;
+  padding: 25px 35px;
+  max-width: 850px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  color: #fff;
+}
+
+/* Carro Info */
+.carro-info {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.carro-info img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.carro-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+.carro-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.carro-info .valor {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00d084;
+  margin-top: 12px;
+}
+
+/* Pagamento Form */
+.pagamento-form {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pagamento-form h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.pagamento-form label {
+  font-size: 1rem;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagamento-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.pagamento-form input:focus {
+  border-color:#2ff26d;
+  background-color: rgba(255, 255, 255, 0.08);
+  outline: none;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-row label {
+  flex: 1;
+}
+
+/* Botões */
+.pagamento-form button, .modal-content > button {
+  padding: 14px;
+  background:#2ff26d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s,
+}
+
+.pagamento-form button:hover, .modal-content > button:hover {
+  background:#00b439;
+
+
+}
+
+.pagamento-form button:active, .modal-content > button:active {
+  transform: translateY(0);
+}
+
+.modal-content > button {
+  margin-top: 20px;
+  background: #777;
+}
+
+.modal-content > button:hover {
+  background: #999;
+}
+
+/* Conclusão */
+.conclusao-pagamento-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  padding: 0;
+}
+
+.conclusao-pagamento-card {
+  background: rgba(30,30,30,0.95);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  animation: fadeInConclusao 0.5s ease-in-out;
+  border: 1px solid rgba(255,255,255,0.08);
+  color: white;
+}
+
+.conclusao-pagamento-icone {
+  font-size: 60px;
+  color: #00d084;
+  margin-bottom: 20px;
+}
+
+.conclusao-pagamento-titulo {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.conclusao-pagamento-mensagem {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.conclusao-pagamento-carro img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.conclusao-pagamento-carro h2 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.conclusao-pagamento-carro p {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.conclusao-pagamento-valor {
+  font-weight: bold;
+  color: #00d084;
+  margin-top: 10px;
+}
+
+.conclusao-pagamento-info {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.conclusao-pagamento-info h3 {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.conclusao-pagamento-info p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.conclusao-pagamento-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #00d084, #00b86b);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.conclusao-pagamento-btn:hover {
+  background: linear-gradient(135deg, #00b86b, #00d084);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInConclusao {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .modal-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carro-info, .pagamento-form {
+    flex: 1 1 100%;
+  }
+}

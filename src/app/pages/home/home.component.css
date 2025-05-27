@@ -1,0 +1,110 @@
+/* ===== Container Principal ===== */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 50px 30px;
+    background: #e7e7e7;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ===== Efeito decorativo no fundo ===== */
+.content-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.015) 0px,
+        rgba(255,255,255,0.015) 2px,
+        transparent 2px,
+        transparent 24px
+    );
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+/* ===== Cards ===== */
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.4) 50%, 
+        transparent 100%);
+    border-radius: 1px;
+}
+
+/* ===== Animação de entrada ===== */
+.content-container {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 1200px) {
+    .content-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.8rem;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        margin: 0 0 25px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        align-self: center;
+    }
+
+    h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
