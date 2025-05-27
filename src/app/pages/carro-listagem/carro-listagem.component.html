@@ -1,0 +1,35 @@
+<div class="content-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Valor</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (carro of listaCarro; track $index){
+            <tr>
+                <td>{{carro.id}}</td>
+                <td>{{carro.nome}}</td>
+                <td>{{carro.marca}}</td>
+                <td>{{carro.modelo}}</td>
+                <td>{{carro.ano}}</td>
+                <td>{{carro.valor}}</td>
+                <td>{{carro.descricao}}</td>
+                <td>
+                  <button class="btn-editar" [routerLink]="['alterar', carro.id]">Editar</button>
+                  <button class=" btn-excluir" (click)="excluir(carro.id!)">Excluir</button>
+                </td>
+            </tr>
+            }
+
+        </tbody>
+
+    </table>
+    <button class="btn-incluir" routerLink="/carros/incluir">Incluir</button>
+</div>

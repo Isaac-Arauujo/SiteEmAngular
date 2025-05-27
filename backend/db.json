@@ -1,0 +1,85 @@
+{
+  "carros": [
+    {
+      "id": "1",
+      "nome": "Corsa",
+      "marca": "Chevrolet",
+      "modelo": "Classic",
+      "ano": "2012",
+      "valor": 25000,
+      "descricao": "1.8 MPFI MAXX 8V FLEX 4P MANUAL Travas elétricas Vidros elétricos Direção hidráulica Retrovisores elétricos\n",
+      "img": "https://imgs.search.brave.com/sUuXMI8wJn8Pdp3HWO7jMY_1xqOqfmL6kqSDd_bAx1I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vdFNHc1JR/VjJPVUp5ZUhnN2ZY/bFFkd2FEOFZ6UGs1/X1NJVlNfN3hMOWIw/NC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl6/TWkxaC9kWFJ2WlhO/d2IzSjBaUzVuL2JH/SnBiV2N1WTI5dEwx/cGkvUnpkbVZGOTBa/MXB1WkhwRC9RMlZV/YmxWVVFtSkZYMDFq/L2R6MHZNSGd3T2pF/eU9EQjQvT1RZd0x6/azROSGd3TDNOdC9Z/WEowTDJacGJIUmxj/bk02L2MzUnlhWEJm/YVdOaktDa3YvYVM1/ek15NW5iR0pwYldj/dS9ZMjl0TDNZeEww/RlZWRWhmL1kyWTVa/REF6TldKbU1qWmkv/TkRZME5tSXhNRFZp/WkRrMS9PR1l6TWpB/NE9XUXZhVzUwL1pY/SnVZV3hmY0dodmRH/OXovTDJKekx6SXdN/alF2U3k5MS9MMlpF/U1hoQ2NWUlpRVVY0/L1VIVXpiSFk0UW1W/bkwyTm8vWlhaeWIy/eGxkQzFqYjNKei9Z/UzAxTFdSdmIzSXRO/VGN1L2FuQm4"
+    },
+    {
+      "id": "4",
+      "nome": "Hyundai",
+      "marca": "Hyundai",
+      "modelo": "I30",
+      "ano": "2010/2011",
+      "valor": 51889,
+      "descricao": "2.0 MPFI GLS 16V GASOLINA 4P AUTOMÁTICO, Aceita troca.",
+      "img": "https://img2.icarros.com/dbimg/imgadicionalnoticia/4/33217_1.jpg"
+    },
+    {
+      "id": "5",
+      "nome": "Corolla",
+      "marca": "Toyota",
+      "modelo": "GLI",
+      "ano": "2023/2024",
+      "valor": 146999,
+      "descricao": "Gasolina e álcool,Câmbio Automática , Cor Branco, Carroceria Sedã",
+      "img": "https://imgs.search.brave.com/KeG-PlXDmiJygS98KC-hy2DlEiFPIrSeZB9vFAEQGHE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vY25WTnky/ZEY4aXc0WFZpMDNu/MFJqZ2dodmlNbkhC/MlAxaUM0T3dOdkF4/MC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl4/ZFdGMC9jbTl5YjJS/aGN5NWhZbkpwL2JD/NWpiMjB1WW5JdmQz/QXQvWTI5dWRHVnVk/QzkxY0d4di9ZV1J6/THpJd01qTXZNRGt2/L016SmZRMDlTVDB4/TVFTMHkvTURJMFgw/Rk1WRWxUTFVoWi9R/bEpKUkY4eUxXVXhO/amsxL016RTFNVFUx/TnpjNUxuQnUvWno5/eGRXRnNhWFI1UFRj/dy9KbmM5TVRBeU5D/WmpjbTl3L1BURQ"
+    },
+    {
+      "id": "2",
+      "nome": "Volkswagen",
+      "marca": "Volkswagen",
+      "modelo": "Fox",
+      "ano": "2014/2014",
+      "valor": 42990,
+      "descricao": "1.6 MI 8V FLEX 4P MANUAL Ar condicionado Freio ABS Travas elétricas Vidros elétricos Direção hidráulica",
+      "img": "https://imgs.search.brave.com/OYEO4mzz3ZX_GBoSL3LYqVJpXs0OrC56WgC_GUSk9fs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vVG90ajFZ/Zl9GczdueDJhUURx/TURVQVVzQnpWOF80/TDZXcmRDc2lpeC1U/QS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlq/Wkc0dS9ZWFYwYjNC/aGNHOHVZMjl0L0xt/SnlMMk5oY25Kdkwz/WnYvYkd0emQyRm5a/VzR2Wm05NC9MVEUy/TFRFMmRpMXRjMmt0/L2FHbG5hR3hwYm1V/dFpteGwvZUMweU1E/RTRMMnhoZEdWeS9Z/V3d0ZGpFdWFuQm4"
+    },
+    {
+      "id": "3",
+      "nome": "Honda",
+      "marca": "Civic",
+      "modelo": "Civic",
+      "ano": "2024/2024",
+      "valor": 220000,
+      "descricao": "2.0 DI e:HEV TOURING e-CVT Farol de neblina, Entrada USB, Direção Elétrica, Kit Multimídia,",
+      "img": "https://imgs.search.brave.com/VrwQbtqKdFY4efd7Q8NjEjdt2lcNMLFQnZYPvIU0wuU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20veEJCdE1M/RzZ6T2tCdmZCY3hr/eDZ1V2R5Qlppanln/RTFYN2xZUUVvSThD/OC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTkz/ZDNjdS9kMlZpYlc5/MGIzSnpMbU52L2JT/NWljaTlwYldGblpX/NXovTDNCeWIyUXZN/emM1Tmpndy9MMGhQ/VGtSQlgwTkpWa2xE/L1h6SXVNRjlFU1Y5/Rk9raEYvVmw5QlJG/WkJUa05GUkY5Ri9R/MVpVWHpNM09UWTRN/REV6L016UXhOelEy/TVRReExuZGwvWW5B/X2N6MW1hV3hzSm5j/OS9NamMxSm1nOU1U/Z3pKbkU5L056QW1k/RDEwY25WbA"
+    },
+    {
+      "id": "6",
+      "nome": "Sentra",
+      "marca": "Nissan",
+      "modelo": "Sentra",
+      "ano": "2024/2025",
+      "valor": 179000,
+      "descricao": "2.0 16V GASOLINA EXCLUSIVE XTRONIC Travas elétricas Vidros elétricos Volante com regulagem de altura\n",
+      "img": "https://image.webmotors.com.br/_fotos/anunciousados/gigante/2025/202505/20250521/nissan-sentra-2-0-16v-gasolina-exclusive-xtronic-wmimagem13290177472.webp?s=fill&w=552&h=414&q=60"
+    },
+    {
+      "id": "7",
+      "nome": "BMW",
+      "marca": "BMW",
+      "modelo": "M5",
+      "ano": "2021/2022",
+      "valor": 769990,
+      "descricao": "4.4 V8 TWINPOWER GASOLINA COMPETITION M XDRIVE STEPTRONIC",
+      "img": "https://imgs.search.brave.com/Bc_gbdQ6G06RHDorHqLyluHWbzLDTsiy4B21WyrdtGc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vRjY2cHpS/Qk02ZVhDeFFKNXlQ/VXlGSGxla2c3MWJQ/SV9xQndkaHhTRHh6/Yy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlp/YlhjdS9jMk5sYm1V/M0xtTnZiUzlwL2N5/OXBiV0ZuWlM5Q1RW/Y3YvVURBd04xOVRT/RVpXWDBjNS9NQzA0/TnpJeFgwVjRkRjlF/L2MydGZSRVZmZGpB/ek5TMVcvYVdSbGIx/TjBhV3hzTFZKbC9k/RzkxWTJobFpEOTNh/V1E5L016ZzBNQ1pv/WldrOU1qVTIvTUE"
+    },
+    {
+      "id": "8",
+      "nome": "Audi",
+      "marca": "Audi",
+      "modelo": "Q6",
+      "ano": "2024/2025",
+      "valor": 569990,
+      "descricao": "100 KW ELÉTRICO PERFORMANCE BLACK QUATTRO\n",
+      "img": "https://imgs.search.brave.com/mzddDUTXdPsDG7mpwDVqefxmaezjsd4NI66eCTn-XcI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vbDFraEFE/aUQtS2h5SWhnay1W/V1RfZDVuSldMVGc4/Sk13RVI2a05qUjlp/OC9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl4/ZFdGMC9jbTl5YjJS/aGN5NWhZbkpwL2JD/NWpiMjB1WW5JdmQz/QXQvWTI5dWRHVnVk/QzkxY0d4di9ZV1J6/THpJd01qUXZNRE12/L1RtOTJieTFCZFdS/cExWRTIvTFdVdGRI/SnZiaTA0TkM1cS9j/R2NfY1hWaGJHbDBl/VDAzL01DWnpkSEpw/Y0QxcGJtWnYvSm5j/OU1UQXlOQ1pqY205/dy9QVEU"
+    }
+  ],
+  "produtos": []
+}

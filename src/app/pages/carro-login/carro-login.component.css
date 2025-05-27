@@ -1,0 +1,119 @@
+/* ===== Container Principal ===== */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 450px;
+  padding: 50px 40px;
+  background: #e2e2e2;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+
+/* ===== Título ===== */
+.content-container h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  background: black;
+  background-clip: text;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* ===== Formulário ===== */
+form {
+  display: center;
+  flex-direction: column;
+}
+
+label {
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+/* ===== Inputs ===== */
+.input-simples {
+  width: 100%;
+  padding: 16px 0px;
+  margin-bottom: 24px;
+  background: white;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #000000;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.input-simples::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ===== Botão ===== */
+.input-submeter {
+  padding: 16px 16px;
+  background: #2ff26d;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.input-submeter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.input-submeter:hover {
+  background: #00b439;
+  transform: translateY(-3px);
+}
+
+.input-submeter:hover::before {
+  left: 100%;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .content-container {
+    width: 90%;
+    padding: 35px 25px;
+  }
+
+  .content-container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-container {
+    width: 95%;
+    padding: 30px 20px;
+  }
+
+  .content-container h1 {
+    font-size: 1.8rem;
+  }
+}

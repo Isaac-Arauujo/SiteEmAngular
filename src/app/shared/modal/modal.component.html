@@ -1,0 +1,77 @@
+<div class="modal-backdrop">
+    <div class="modal-content">
+        @if(compraFeita){
+        <div class="conclusao-pagamento-container">
+            <div class="conclusao-pagamento-card">
+                <div class="conclusao-pagamento-icone">
+                    ✅
+                </div>
+
+                <h1 class="conclusao-pagamento-titulo">Compra Realizada com Sucesso!</h1>
+
+                <p class="conclusao-pagamento-mensagem">Parabéns, sua compra foi concluída com sucesso.</p>
+
+                <div class="conclusao-pagamento-carro">
+                    <img [src]="carro().img" alt="{{ carro().nome }}" />
+
+                    <h2>{{ carro().nome }}</h2>
+                    <p><strong>Marca:</strong> {{ carro().marca }}</p>
+                    <p><strong>Modelo:</strong> {{ carro().modelo }}</p>
+                    <p><strong>Ano:</strong> {{ carro().ano }}</p>
+                    <p class="conclusao-pagamento-valor">Valor Pago: R$ {{ carro().valor | number:'1.2-2' }}</p>
+                </div>
+
+                <div class="conclusao-pagamento-info">
+                    <h3>Forma de Pagamento</h3>
+                    <p><strong>Cartão:</strong> **** **** **** {{ pagamento.numero.slice(-4) }}</p>
+                    <p><strong>Nome:</strong> {{ pagamento.nome }}</p>
+                </div>
+
+                <button class="conclusao-pagamento-btn" (click)="voltarParaInicio()">Voltar para a Home</button>
+            </div>
+        </div>
+
+        }@else {
+        <div class="carro-info">
+            <img [src]="carro().img" alt="{{ carro().nome }}">
+            <h2>{{ carro().nome }}</h2>
+            <p><strong>Marca:</strong> {{ carro().marca }}</p>
+            <p><strong>Modelo:</strong> {{ carro().modelo }}</p>
+            <p><strong>Ano:</strong> {{ carro().ano }}</p>
+            <p class="valor">R$ {{ carro().valor | number: '1.2-2' }}</p>
+            <p class="descricao" *ngIf="carro().descricao">{{ carro().descricao }}</p>
+        </div>
+
+        <form (ngSubmit)="onConfirmar()" #form="ngForm" class="pagamento-form">
+            <h3>Pagamento</h3>
+
+            <label>
+                Nome no cartão
+                <input type="text" [(ngModel)]="pagamento.nome" name="nome" required>
+            </label>
+
+            <label>
+                Número do cartão
+                <input type="text" [(ngModel)]="pagamento.numero" name="numero" required maxlength="16">
+            </label>
+
+            <div class="form-row">
+                <label>
+                    Validade
+                    <input type="month" [(ngModel)]="pagamento.dataValidade" name="dataValidade" required>
+                </label>
+
+                <label>
+                    CVV
+                    <input type="text" [(ngModel)]="pagamento.cvv" name="cvv" required maxlength="4">
+                </label>
+            </div>
+
+            <button type="submit" [disabled]="!form.valid">Confirmar Compra</button>
+        </form>
+
+        <button (click)="onClose()">Fechar</button>
+
+        }
+    </div>
+</div>

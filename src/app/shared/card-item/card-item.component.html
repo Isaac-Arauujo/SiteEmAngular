@@ -1,0 +1,17 @@
+<head>
+        <script src="//code.jivosite.com/widget/FweRFrac7x" async></script>
+
+</head>
+<mat-card class="example-card" appearance="outlined">
+    <img mat-card-image [src]="carro().img" alt="descrição da foto">
+    <mat-card-content>
+        <h1>{{carro().nome}}</h1>
+        <h2>{{carro().modelo}}</h2>
+        <p>
+            {{carro().descricao}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-flat-button color="primary" (click)="comprar()">COMPRAR</button>
+    </mat-card-actions>
+</mat-card>

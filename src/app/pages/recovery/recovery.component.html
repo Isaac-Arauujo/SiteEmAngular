@@ -1,0 +1,12 @@
+<div class="content-container">
+  <h1>Recuperar Senha</h1>
+
+  <form>
+    <label for="email">Email cadastrado</label>
+    <input class="input-simples" id="email" name="email" type="email" [(ngModel)]="email" placeholder="Digite seu email" />
+
+    <a class="input-submeter" (click)="recuperar()">Enviar</a>
+
+    <a class="link-voltar" (click)="voltarLogin()">Voltar ao login</a>
+  </form>
+</div>
